@@ -43,7 +43,7 @@ func brick_collision(delta, collision):
 	bounce(collision)
 	
 	var brick = collision.get_collider()
-	brick.queue_free()
+	brick.hit()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
